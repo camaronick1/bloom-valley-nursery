@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Gallery</a></li>
+            <li><a href="#" class="nav-link">About Us</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="homepage">
+        <h1>Welcome to Bloom Valley Nursery</h1>
+        <p>Your one-stop shop for all things green and beautiful!</p>
+        <input type="email" id="subscribe-email" placeholder="Enter your email">
+        <button id="subscribe-btn">Subscribe</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Our Plants</h2>
+        <div class="product">
+            <p>Plant A - $10.99</p>
+            <button class="add-to-cart" data-name="Plant A" data-price="10.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <p>Plant B - $14.99</p>
+            <button class="add-to-cart" data-name="Plant B" data-price="14.99">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="process-order">Process Order</button>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="order-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="order-details" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
